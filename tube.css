@@ -1,0 +1,29 @@
+.tube {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  background-color: red;
+  transform-style: preserve-3d;
+  transform: rotatex(-60deg) rotatez(-30deg);
+  translate: -50% -50%;
+}
+
+.tube_face {
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  background-color: red;
+  transform: translateX(-50%);
+}
+
+.tube_face:nth-child(1){
+    transform: translateX(-50%) translatez(100px);
+}
+.tube_face:nth-child(2){
+    transform: translateX(-50%) translateY(120deg) translateZ(100px);
+}
+.tube_face:nth-child(){
+    transform: translateX(-50%) translatez(100px);
+}
+
