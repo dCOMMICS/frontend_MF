@@ -20,10 +20,12 @@
 .tube_face:nth-child(1){
     transform: translateX(-50%) translatez(100px);
 }
+
 .tube_face:nth-child(2){
     transform: translateX(-50%) translateY(120deg) translateZ(100px);
 }
-.tube_face:nth-child(){
-    transform: translateX(-50%) translatez(100px);
+
+.tube_face:nth-child(3){
+    transform: translateX(-50%) translateY(240deg) translateZ(100px);
 }
 
