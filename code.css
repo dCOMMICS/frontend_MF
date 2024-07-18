@@ -17,11 +17,6 @@
   transform: translateX(-50%);
 }
 
-/* --radius: 100px;
---n: 100;
---length: calc(var(--radius) * 2 * tan(180deg / var(--n)));
---angle: calc(360deg / var(--n)); */
-
 .tube_face:nth-child(1){
     transform: translateX(-50%) translateZ(100px);
 }
@@ -33,4 +28,3 @@
 .tube_face:nth-child(3){
     transform: translateX(-50%) translateY(240deg) translateZ(100px);
 }
-
