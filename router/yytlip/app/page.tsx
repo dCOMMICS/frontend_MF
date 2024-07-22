@@ -6,6 +6,8 @@ export default function Home() {
   );
 }
 
+// dont be a slave to the alogrothimation
+
 
 
 
