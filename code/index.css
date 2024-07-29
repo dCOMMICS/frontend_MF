@@ -1,0 +1,29 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+:root  {
+    --font-family:;
+    --body-bg:;
+    --btn-color:;
+    --btn-bg:;
+    --btn-color-hover:;
+    --grad-color1:;
+    --grad-color2:;
+    --grad-color3:;
+    --grad-color4:;
+    --grad-color5:;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.button-border {
+    background: linear-gradient(115deg, #eeaf61, #fb9062, #ee5dc6, #6a8);
+    padding: 2px;
+}
