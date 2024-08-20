@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Lora", serif;
 }
 
 html,body {
     height: 100%;
     width: 100%;
+    
 }
 
 #main {
@@ -19,12 +23,38 @@ html,body {
 }
 
 .left-top-left {
-    background-color: aqua;
+    /* background-color: aqua; */
+    padding: 40px ;
 }
+
+.square {
+    height: 25px;
+    width: 25px;
+    rotate: 45deg;
+    background-color: #000;
+}
+
 
 .left-top-right {
-
+    /* background-color: rgb(56, 19, 83); */
+    justify-self: right;
+    padding: 40px;
+    text-align: right;
 }
+
+.left-top-right h4  {
+    /* background-color: chartreuse; */
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.left-top-right h5 {
+    /* background-color: chartreuse; */
+    font-weight: 500;
+    font-size: 18px;
+}
+
 
 .right {
     background-color: aquamarine;
