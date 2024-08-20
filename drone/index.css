@@ -96,8 +96,9 @@ body {
     right: 30px;
     outline: none;
     border: 2px solid #00B894;
-    background-color: #000;
+    background-color: #EAE7DC;
     color: #00B894;
+    border-radius: 10px;
     transition: width 0.3s ease, padding 0.3s ease ;
 }
 
@@ -113,4 +114,78 @@ body {
     opacity: 1;
     position: absolute;
     right: 30px;
+}
+
+
+/* __________home_______ */
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    color: #000;
+    left: 6%;
+    top: 20%;
+    position: absolute;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 450px;
+    background-color: #000;
+    margin-right: 10px;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.icons {
+    right: 9%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.icons i {
+    font-size: 15px;
+    padding: 0.2rem;
+    cursor: pointer;
+    margin: 0.5rem 0;
+    border-radius: 50%;
+    flex: 1 ;
+}
+
+.icons i:hover {
+    background-color: #00B894;
+    color: #000;
+    transform: scale(1,1);
+}
+
+.img {
+    position: relative;
+    top: 25%;
+}
+
+.img img {
+    width: 850px;
+}
+
+.content {
+    position: absolute;
+}
+
+.content h1 {
+    font-size: 12em;
+    color: #00B894;
 }
