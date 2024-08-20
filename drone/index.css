@@ -90,5 +90,7 @@ body {
     width: 0;
     padding: 0;
     overflow: hidden;
-    white-space: no;
+    white-space: nowrap;
+    opacity: 0;
+    position: absolute;
 }
