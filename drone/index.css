@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    /* ignore text transform */
+    text-transform: capitalize;
+    margin: 0;
+    transition: all 0.5s linear;
+}
+
+body {
+    color: #2D3436;
+    background-color: #EAE7DC;
+    font-family: "Karla", sans-serif;
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    top: 0;
+    padding: 1% 0;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.5s;
+    z-index: 1;
+    color: #2D3436;
+    height: 12vh;
+}
+
+.navbar-items {
+    flex: 1 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.logo span {
+    color: #00B894;
+}
+
+.navbar-items ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.navbar-items ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0px ;
+    color: #2D3436;
+} 
+
+.navbar-items ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+
+    background: #00B894;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar-items ul li:hover::after {
+        width: 100%;
+}
+
+.burger {
+    display: none;
+}
+
+.nav_search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 5em;
+    cursor: pointer;
+}
+
+.nav_search input {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+    white-space: no;
+}
