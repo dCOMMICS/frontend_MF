@@ -15,3 +15,5 @@ document.addEventListener('click', (e) =>{
         navSearch.classList.remove('active');
     }
 })
+
+TweenLite.to(".content", 5, {delay:1.5, scrambleText:{text:"OUR CAMERAS", rightToLeft:true, chars:"uppercase"}})
