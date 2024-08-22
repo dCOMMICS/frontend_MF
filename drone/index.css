@@ -271,3 +271,36 @@ body {
 .about-box p {
     color: #000;
 }
+
+
+/* _________blog section___________ */
+
+.ourcollection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 3%;
+}
+
+.b_bb {
+    flex-basis: 22%;
+    background-color: #2b2b2b;
+    padding: 1%;
+    margin: 2%;
+}
+
+.b_bb:hover {
+    box-shadow: rgba(0, 0, 0, 2.35) 10px 10px 15px;
+    transform: translateY(-8%);
+}
+
+.b_bb img {
+    width: 100px;
+}
+
+.b_bb h3 {
+    padding-top: 12px;
+    font-weight: 400;
+}
