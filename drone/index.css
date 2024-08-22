@@ -9,6 +9,10 @@
     transition: all 0.5s linear;
 }
 
+h4 {
+    font-weight: bold;
+}
+
 body {
     color: #2D3436;
     background-color: #EAE7DC;
@@ -28,6 +32,11 @@ body {
     color: #2D3436;
     height: 12vh;
 }
+
+.navbar.scrolled{
+    background-color: #2b2b2b;
+    box-shadow: 0 2px 5px rgba(225, 162, 0, 0.2);
+}   
 
 .navbar-items {
     flex: 1 ;
@@ -179,6 +188,7 @@ body {
 
 .img img {
     width: 650px;
+    animation: slideLeft 2s ease-in-out;
 }
 
 .content {
@@ -188,4 +198,76 @@ body {
 .content h1 {
     font-size: 12em;
     color: #00B894;
+
+    /* change animation to ease-in-out */
+    animation: fadeIn 3s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+
+
+/* ______________ABOUT SECTION */
+
+.sec {
+    padding-top: 8%;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.heading {
+    font-size: 4em;
+    color: #00B894;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5%;
+}
+
+.A_img {
+    grid-area: 1/2/2/3;
+}
+
+.A_img img {
+    width: 100%;
+}
+.about-boxes {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4rem 2rem;
+    text-align: left;
+}
+
+.about-box h3 {
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.about-box p {
+    color: #000;
 }
