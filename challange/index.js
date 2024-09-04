@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const img = document.createElement("img");
             img.src = `./assets/img${i}.jpg`;
+            // ERROR CAN'T RECALL IMAGE FROM DIRECTORY and location don't match from a previous on....
             img.alt = `Image ${i}`;
 
             item.appendChild(img);
