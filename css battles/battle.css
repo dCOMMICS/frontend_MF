@@ -1,0 +1,10 @@
+body {
+    background-color: #f3ac3c;
+    display: flex;
+}
+
+.head-wrapper {
+    width: 100px;
+    height: 200px;
+    background-color: #9f3333;
+}
