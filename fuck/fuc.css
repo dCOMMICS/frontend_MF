@@ -19,6 +19,7 @@ body {
   height: 60%;
   background-color: #fff;
   clip-path: circle(50%);
+  animation: fade-frame 10s infinite ease-in-out;
 }
 
 .uty-area {
@@ -71,7 +72,22 @@ body {
 
 .sun-cont{
     position: absolute;
-    width: 100%;
+    width: calc(100% + 80px);
+    left: -40px;
+    top: 10%;
+    height: 65%;
+    transform-origin: bottom;
+    transform: rotate(180deg);
+    animation: sun-conc 5s infinite ease-in-out;
+}
+
+.sun{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #feef01;
+    border-radius: 50px;
+    top: 100%;
 }
 
 
@@ -133,5 +149,38 @@ body {
   100% {
     clip-path: polygon(20% 0%, 80% 0%, -50% 0%);
     animation-timing-function: ease-out;
+  }
+}
+
+
+@keyframes sun-conc {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    35% {
+        transform: rotate(60deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes fade-frame {
+  0% {
+    opacity: 0%;
+  }
+  
+  35% {
+    opacity: 100%;
+  }
+  
+  65% {
+    opacity: 100%;
+  }
+  
+  100% {
+    opacity: 0%;
   }
 }
